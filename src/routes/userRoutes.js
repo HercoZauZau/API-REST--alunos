@@ -20,6 +20,8 @@ router.post('/', loginRequired, userController.store);
 router.put('/', loginRequired, userController.update);
 router.delete('/', loginRequired, userController.delete);
 
+// O usuário só poderá atualizar e apagar seus próprios dados.
+
 export default router;
 
 /*
