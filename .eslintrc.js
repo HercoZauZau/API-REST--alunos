@@ -19,5 +19,6 @@ module.exports = {
     'arrow-body-style': 0,
     'no-param-reassign': 0,
     camelcase: 0,
+    'max-len': 0,
   },
 };
