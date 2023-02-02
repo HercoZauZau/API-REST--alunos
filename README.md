@@ -1,5 +1,3 @@
-# API-REST--alunos
-
 ## Sobre
 
 **API feita em Nodejs para gestão de dados de alunos, usando MariaDB para persistência dos dados.**
@@ -40,6 +38,86 @@ As senhas dos usuários são encriptadas.
 ---
 ## Instalação
 
+ - Abra o terminal do projecto
+ - `npm install` para instalar os pacotes necessários
+ - `npm start` para rodar o projecto na `localhost:3001`
+ - `ctrl + c` para parar o servidor
+ - `npm run build` para atualizar a dist
+
+
+## Migrations
+
+- npx sequelize migration:create --name=`nome da migration`
+- npx sequelize db:migrate
+
+
+## Execução
+
+ - Crie uma conta de usuário `localhost:3001/users/` 
+ - Gere um Token para autenticação das secções `localhost:3001/tokens/` 
+
+## .env
+
+Não esqueça de criar um arquivo `.env` com as configurações necessárias:
+
+  - DATABASE= `nome da DB`
+  - DATABASE_HOST= `link da DB`
+  - DATABASE_PORT= `porta a rodar na DB`
+  - DATABASE_USERNAME= `nome de usuário na DB`
+  - DATABASE_PASSWORD= `senha de acesso a DB`
+  - TOKEN_SECRET= `secret dos tokens que serão gerados`
+  - TOKEN_EXPIRATION= `tempo de validade do token`
+  - APP_URL= `url da API` coloque `localhost`
+  - APP_PORT= `porta` coloque `3001` por exemplo
+
+
+---
+
+## Exemplo
+
+```json
+[
+    {
+        "id": 1,
+        "nome": "Tatiana",
+        "sobrenome": "Langa",
+        "email": "tlanga@email.com",
+        "idade": 20,
+        "peso": 76.9,
+        "altura": 1.5,
+        "Fotos": []
+    },
+    {
+        "id": 2,
+        "nome": "Marcos",
+        "sobrenome": "Chissano",
+        "email": "chissano@email.com",
+        "idade": 18,
+        "peso": 69.3,
+        "altura": 1.8,
+        "Fotos": []
+    },
+    {
+        "id": 3,
+        "nome": "Carlos",
+        "sobrenome": "Zucula",
+        "email": "czucula@email.com",
+        "idade": 18,
+        "peso": 60,
+        "altura": 1.2,
+        "Fotos": [
+            {
+                "url": "http://localhost/images/1675062594842_1811.jpg",
+                "filename": "1675062594842_1811.jpg"
+            },
+            {
+                "url": "http://localhost/images/1675062418734_1811.jpg",
+                "filename": "1675062418734_1811.jpg"
+            }
+        ]
+    }
+]
+```
 ---
 
 ## Feito com
