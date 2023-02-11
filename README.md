@@ -67,8 +67,8 @@ Não esqueça de criar um arquivo `.env` com as configurações necessárias:
   - DATABASE_PASSWORD= `senha de acesso a DB`
   - TOKEN_SECRET= `secret dos tokens que serão gerados`
   - TOKEN_EXPIRATION= `tempo de validade do token`
-  - APP_URL= `url da API` coloque `localhost`
-  - APP_PORT= `porta` coloque `3001` por exemplo
+  - APP_URL= `url da API` exemplo `http://localhost:3001`
+  - APP_PORT= `porta` exemplo `3001`
 
 
 ---
