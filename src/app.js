@@ -34,12 +34,20 @@ class App {
   }
 }
 
+/* 
+
+  Use o seguinte trecho caso precise:
+    * Limitar os endereços que possam ter acesso a sua API;
+    * Corrigir um possível erro com CORS. ex: '...has been blocked by CORS...'
+
+  Na 'whiteList' ficam os endereços com permição para acessar a API. Coloque o seu para corrigir o erro do CORS.
+
+*/
+
 /*
-// Caso você queira limitar os endereços que possam ter acesso a sua API, use o seguinte trecho:
 
 import cors from 'cors';
 
-// Lista de todos endereços que podem acessar a API
 
 const whiteList = [
   'http://localhost:3001', // exemplo
