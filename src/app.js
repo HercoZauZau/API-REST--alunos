@@ -6,6 +6,7 @@ dotenv.config();
 import "./database";
 
 import express from "express";
+import helmet from "helmet";
 import homeRoutes from "./routes/homeRoutes";
 import userRoutes from "./routes/userRoutes";
 import tokenRoutes from "./routes/tokenRoutes";
@@ -20,6 +21,8 @@ class App {
   }
 
   middlewares() {
+    this.app.use(helmet());
+    this.app.use(helmet.crossOriginResourcePolicy({ policy: 'cross-origin' }));
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use(express.static(resolve(__dirname, '..', 'uploads')));
