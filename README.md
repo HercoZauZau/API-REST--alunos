@@ -67,8 +67,8 @@ Não esqueça de criar um arquivo `.env` com as configurações necessárias:
   - DATABASE_PASSWORD= `senha de acesso a DB`
   - TOKEN_SECRET= `secret dos tokens que serão gerados`
   - TOKEN_EXPIRATION= `tempo de validade do token`
-  - APP_URL= `url da API` coloque `localhost`
-  - APP_PORT= `porta` coloque `3001` por exemplo
+  - APP_URL= `url da API` exemplo `http://localhost:3001`
+  - APP_PORT= `porta` exemplo `3001`
 
 
 ---
@@ -107,11 +107,11 @@ Não esqueça de criar um arquivo `.env` com as configurações necessárias:
         "altura": 1.2,
         "Fotos": [
             {
-                "url": "http://localhost/images/1675062594842_1811.jpg",
+                "url": "http://localhost:3001/images/1675062594842_1811.jpg",
                 "filename": "1675062594842_1811.jpg"
             },
             {
-                "url": "http://localhost/images/1675062418734_1811.jpg",
+                "url": "http://localhost:3001/images/1675062418734_1811.jpg",
                 "filename": "1675062418734_1811.jpg"
             }
         ]
